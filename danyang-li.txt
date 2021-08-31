@@ -11,7 +11,7 @@
     <element attribute="value">element content</element>
 
     4. What is the h1 tag used for? How many times should I use it on a page?
-    Taging the sentence as an important header.
+    Taging the sentence as the most important header.
     One time.
 
     5. Name two tags that have required attributes
@@ -25,13 +25,13 @@
     The HTML id specifies a unique identifier in the whole document. The value must be unique within the HTML document, just like driver's license number.
     
     8. What elements can I add an id to? 
-    Global elements, linking, scripting or styling, such as div, p, span,etc.
+    The elements of linking, scripting or styling, such as div, p, span,etc.
 
     9. How many times can I use the same id on a page? 
     one.
 
     10. What is a class? 
-    The class is an attribute which specifies one or more class names for an element.
+    The class is an attribute which specifies one or more class names for an element, like classroom.
 
     11. What elements can I add a class to? 
     Linking, scripting, styling, etc, such as div, span, p, etc.
@@ -61,6 +61,11 @@
     }
 
     19. What is the difference between a class and an id? - Give me an example of when I might use each one
+    An id is the unique identifier in the whole document. We use the same id value only once on a page.
+    A class is an attribute which specifies one or multiple elements that appear on the page for once or more than once.
+    
+    id: header, body, footer
+    class: links
 
 
     20. How do we select classes in CSS?
@@ -74,11 +79,19 @@
     }
 
     22. What is a parent child selector? When would this be useful? 
-    The selector selects all element that are a direct child of specifies element.
+    For example, the selector selects all <p> element that are a direct child of its parent <div> element, does not select other <p> element whose are not a child element of <div> parent. 
+    When we don't want to select all the child element, we only focus on the direct child element.
 
     23. How do you select all links within a div with the class of sidebar?
+    .sidebar a:link {
+
+    }
 
     24. What is a pseudo selector?
+    Defining the state of an element, targeting the elements that can’t be targeted with combinators or simple selectors like id, class or tag type.
+    selector:pseudo-class{
+        property:value;
+    }
 
     25. What do we use the change the spacing between lines?
     line-height 
@@ -110,9 +123,10 @@
 
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
        rm filename.txt
-       
+       Because a file will be removed irrevocablely and permenantly.
 
     34. Why should I use version control? 
+    To keep track of collaborative and personla projects,for example, help me to easily explore the changes I have made, maintain online backup, assign and review code by others, etc.
 
     35. How often should I commit to github?
     At least a couple of times every hour, 20 minutes recommanded.
@@ -121,11 +135,42 @@
     git push -u origin "branch-name"
 
     37. Walk me through Lambda's git flow. 
+    fork on Github(upper right)
+    name should be in front of the repo name before slash
+    copy clone SSH link
+    open terminal or Gitbash
+    use cd command to go to the directory where you want to clone your forked repo
+    git clone <link-to-repo> command
+    enter SSH passphrase
+    cd <repo-name> cd into newly created repo
+    git checkout -b "firstname-lastname"
+    code . to open current repo in VSCode from terminla or Gitbash
+    Do work and save as many times as you can.
+    git add . will add repo changes, makes them ready to commit
+    git commit -m "comment content"
+    git push -u origin "firstname-lastname"
+        git push after the first push
+    enter SSH key
+    go to repo on Github
+    select firstname-lastname instead of master from the dropdown menu top left 
+    Leave a comment if you wish
+    do not merge request
+    create pull request
+    copy URL and submit
+
+
 
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
+    A block element starts on a new line and takes up the full width available.It has a top and a bottom margin.
+    An inline element does not start on a new line, only takes up as much width as necessary, and don't have a margin.
+
     2. What happens when an element is positioned absolutely? 
+
+
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them?
