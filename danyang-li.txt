@@ -1,4 +1,8 @@
 
+    
+    https://codepen.io/danyang-li/pen/powyJYa?editors=1000
+    
+
     1. What is Semantic HTML? 
     Using HTML markup to reinforce the semantics, or meaning of the information in webpages and web applications. 
 
@@ -100,7 +104,9 @@
     word-spacing
 
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
-    Capitalize
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
 
     28. How do I add a 1px border around my div that is dotted and black?
        div{
@@ -167,10 +173,15 @@ Stretch Questions
     An inline element does not start on a new line, only takes up as much width as necessary, and don't have a margin.
 
     2. What happens when an element is positioned absolutely? 
+    It will position itself relative to the nearest positioned ancestor.
 
 
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    overflow:hidden;
 
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    diplay block by default: div h1-h6 ul
+    display inline by default: span link
+    disply inline-block by default: button
 
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them?
